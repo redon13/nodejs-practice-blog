@@ -4,7 +4,7 @@ Simple blog page built to learn and practice Node JS
 
 
 ## Preview
-(https://github.com/redon13/nodejs-practice-blog/blob/master/Design-concept.png)
+[![Blog Preview](https://github.com/redon13/nodejs-practice-blog/blob/master/Design-concept.png)]
 
 ## Status
 
