@@ -16,7 +16,7 @@ To begin using this template, choose one of the following options to get started
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue]() here on GitHub or leave a comment on the [overview page at ???]().
+Have a bug or an issue with this template? [Open a new issue](https://github.com/redon13/nodejs-practice-blog/issues) here on GitHub.
 
 
 ## Copyright and License
