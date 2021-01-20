@@ -1,21 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale= 1.0">
-
-    <title>Single post</title>
-
-    <!-- link stylesheet  -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nodejs Practice Blog App | Single post</title>
 </head>
 <body>
-    <header>
-        <div>The News Blog</div>
-    </header>
-
-<!-- link js  -->
-<script src="js/main.js"></script>
+<!-- Navigation -->
+<header>
+    <div class="nav">
+        <!-- <div class="nav__logo"> -->
+        <svg class="nav__logo">
+            <use xlink:href="assets/icon/sprites.svg#icon-blogger"></use>
+        </svg>
+        <!-- </div> -->
+        <ul class="nav__collection">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Add new</a></li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Contact Us</a></li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">About Us</a></li>
+        </ul>
+        <!--  hamburger for mobile view  -->
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+</header>
+<!-- Main body -->
+<main>
+    <article class="article">
+        <h1 class="primary-heading mb-1">Summer is coming...</h1>
+        <h4 class="tertiary-heading mb-4">
+            Stay tuned with us for the latest news and more.
+        </h4>
+        <div class="article__box">
+            <div class="article__img--box">
+                <img src="assets/img/summer.jpg" alt="article image" class="article__img">
+            </div>
+            <div class="article__body">
+                <h2 class="article__heading secondary-heading mb-1">
+                    Summer is coming...
+                </h2>
+                <p class="article__text paragraph">
+                    Summer is the hottest of the four temperate seasons, falling after spring and before autum. At around the summer
+                    solstice (about 3days before Midsummer Day), the earliest sunrise and latest sunset occurs, the days are longest and
+                    the nights are shortest with day length decreasing as the season progresses after the solstice. The date of the
+                    beginning of summer varies according to climates, tradition and culture. When it is summe rin the Northern Hemisphere,
+                    it is winter in the Souther Hemisphere and vice versa. From an astronomical view, the equinoxes and solstices would be
+                    the middle of the respective seasons.<br><br>
+                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Pellentesque in ipsum id orci porta dapibus.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat.
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.<br><br>
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor
+                    accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut
+                    libero malesuada feugiat.
+                </p>
+            </div>
+        </div>
+    </article>
+    <!-- right hand side -->
+    <aside class="aside">
+        <div class="filter__box">
+            <div class="filter__box--group">
+                <input type="search" name="filter" id="filter" class="filter__input" placeholder="Search here">
+                <svg class="filter__icon">
+                    <use xlink:href="assets/icon/sprites.svg#icon-search"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="recent__news">
+            <h2 class="secondary-heading recent__news--heading mb-1">Recent News</h2>
+            <div class="recent__news--posts">
+                <div class="card">
+                    <img src="assets/img/temp.jpg" alt="" class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__heading mb-1">Temperature is high</h3>
+                        <p class="card__text paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur distinctio consequuntur ad laboriosam mollitia?
+                            <a href="#" class="card__link">Read more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/extinct.jpg" alt="" class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__heading mb-1">Animal Extinction</h3>
+                        <p class="card__text paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur distinctio consequuntur ad laboriosam molliti.
+                            <a href="#" class="card__link">Read more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/ice.jpg" alt="" class="card__img">
+                    <div class="card__body">
+                        <h3 class="card__heading mb-1">Ice dissolution</h3>
+                        <p class="card__text paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur distinctio consequuntur ad laboriosam mollitia? Lorem ipsum dolor sit amet.
+                            <a href="#" class="card__link">Read more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="news__link--box">
+                <a href="#" class="news__link">View all</a>
+            </div>
+            <div class="newsletter-box">
+                <h2 class="secondary-heading newsletter__heading mb-2">News Letters</h2>
+            </div>
+            <form action="#" class="newsletter__form">
+                <div class="newsletter__form--group">
+                    <input type="email" name="email" id="email" placeholder="Place your email here" class="email__input">
+                    <svg class="email__icon">
+                        <use xlink:href="assets/icon/sprites.svg#icon-envelop"></use>
+                    </svg>
+                </div>
+                <span class="subscribe">Subscribe Us</span>
+            </form>
+        </div>
+    </aside>
+</main>
+<footer>
+    <div class="footer__icons">
+        <p class="footer__icons-text paragraph">Stay wit us</p>
+        <a href="#" class="footer__icon--link">
+            <svg class="footer__icon">
+                <use xlink:href="assets/icon/sprites.svg#icon-facebook2"></use>
+            </svg>
+        </a>
+        <a href="#" class="footer__icon--link">
+            <svg class="footer__icon">
+                <use xlink:href="assets/icon/sprites.svg#icon-instagram"></use>
+            </svg>
+        </a>
+        <a href="#" class="footer__icon--link">
+            <svg class="footer__icon twitter__icon">
+                <use xlink:href="assets/icon/sprites.svg#icon-twitter"></use>
+            </svg>
+        </a>
+        <a href="#" class="footer__icon--link">
+            <svg class="footer__icon">
+                <use xlink:href="assets/icon/sprites.svg#icon-linkedin"></use>
+            </svg>
+        </a>
+    </div>
+    <p class="footer__designer paragraph">
+        Designed by
+        <a
+                href="https://www.behance.net/aseniyanimnad1"
+                class="footer__link"
+                target="_blank"
+        >Aseniya Nimnad</a
+        >
+    </p>
+    <p class="footer__coder paragraph">
+        Coded by <a href="#" class="footer__link">Michicko</a> &
+        <a href="#" class="footer__link">GeorgeL</a>
+    </p>
+    <p class="footer__copy paragraph">Copyrights &copy; 2021.</p>
+</footer>
 </body>
+<script src="js/main.js"></script>
 </html>
