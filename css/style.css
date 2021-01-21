@@ -5,7 +5,6 @@
     --primary-color: #363636;
     --secondary-color: #785833;
     --white-color: #ffffff;
-    --bp-largest: 75em; /* 1200px / 16px */
 }
 
 /* Base */
@@ -517,5 +516,4 @@ footer > p{
     font-size: 1.5rem;
     color: var(--secondary-color);
 }
-
 /* End of Components */
