@@ -1,0 +1,520 @@
+/*# sourceMappingURL=style.css.map */
+/* Variables */
+:root {
+    --primary-color: #363636;
+    --secondary-color: #785833;
+    --white-color: #ffffff;
+    --bp-largest: 75em; /* 1200px / 16px */
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        /*font-size: 50%;*/
+    }
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    letter-spacing: 0.1rem;
+    padding: 0 4rem;
+    background-color: var(--white-color);
+}
+
+
+/* End of Base */
+
+
+/* Typography */
+.primary-heading {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.secondary-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.tertiary-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.paragraph{
+    font-size: 1.5rem;
+}
+
+.primary-heading,
+.tertiary-heading,.secondary-heading, .paragraph {
+    color: var(--primary-color);
+}
+/* End of Typography */
+
+
+/* Utilities */
+.m-1{
+    margin: 1rem;
+}
+
+.m-22{
+    margin: 1rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mb-4{
+    margin-bottom: 4rem;
+}
+.mb-6{
+    margin-bottom: 6rem;
+}
+
+/* End of Utilities */
+
+
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    margin-bottom: 4rem;
+}
+
+.nav__logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    fill: var(--primary-color);
+    margin-right: auto;
+}
+
+.nav__collection {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__collection > .nav__item:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 536px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav__collection {
+        position: fixed;
+        right: 0px;
+        height: 42vh;
+        top: 8vh;
+        background-color: rgba(196, 196, 196, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        min-width: fit-content;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        opacity: 0;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .nav__link:link, .nav__link:visited{
+        margin-left: 40px;
+    }
+
+    .nav__collection li {
+        margin: 20px 0 20px 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+.nav__link:link,
+.nav__link:visited {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.2s;
+}
+
+.nav__link:hover,
+.nav__link:active,
+.nav__link.current {
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+    /* text-decoration: underline; */
+}
+
+/* End of Navigation */
+
+
+/* Main page */
+main {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-column-gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-row-gap: 4rem;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+}
+
+
+/* Aticle */
+img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.article {
+
+}
+
+.article__img--box{
+    margin-bottom: 2rem;
+}
+
+.article__link:link, .article__link:visited{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/* End of Article */
+
+
+/* Aside */
+.aside {
+
+}
+
+.filter__box{
+    text-align: end;
+    margin-bottom:7rem;
+}
+
+.filter__box--group{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0 1rem 0 1rem;
+}
+
+.filter__icon{
+    height: 2rem;
+    width:2rem;
+    fill: var(--primary-color);
+}
+
+
+.filter__input{
+    border: none;
+    padding: 1rem;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.recent__news--heading{
+    text-align: end;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+@media only screen and (max-width: 700px) {
+    .recent__news--heading{
+        text-align: start;
+        margin-bottom: 2rem;
+    }
+}
+
+.news__link--box{
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 6rem;
+}
+
+.news__link:link, .news__link:visited{
+    color: var(--secondary-color);
+}
+
+.newsletter__heading{
+    text-align: end;
+    text-decoration: underline;
+}
+
+
+.newsletter__form--group{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 1rem;
+}
+
+.email__input{
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+
+.email__input::placeholder{
+    font-size: 1.5rem;
+
+}
+.email__icon{
+    height: 3rem;
+    width: 3rem;
+    fill: var(--primary-color);
+}
+
+.subscribe{
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+/* End of Aside */
+
+
+/* footer */
+footer{
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+  'copy design coded icons'
+;
+    grid-row-gap: 1rem;
+    align-items: center;
+}
+
+
+footer > p{
+    margin-right: 4rem;
+}
+
+@media only screen and (max-width: 980px) {
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+  'icons design'
+  'copy coded'
+    ;
+        grid-row-gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    footer{
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+  'icons'
+  'design'
+  'coded'
+  'copy'
+    ;
+        grid-row-gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer > p{
+        margin-right: 0;
+    }
+
+    .footer__icons-text{
+        display: none;
+    }
+
+}
+
+.footer__icons{
+    display: flex;
+    align-items: center;
+    grid-area: icons;
+    justify-self: center;
+}
+
+.footer__icons>*:not(:last-child){
+    margin-right: 1rem;
+}
+
+.footer__icon{
+    height: 2rem;
+    width: 2rem;
+    fill: var(--primary-color);
+}
+.footer__icon--link:link, .footer__icon--link:visited{
+    fill: var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer__icon--link:hover .footer__icon{
+    fill: var(--secondary-color);
+}
+
+
+.footer__designer{
+    grid-area: design;
+}
+
+.footer__coder{
+    grid-area: coded;
+}
+
+.footer__copy{
+    grid-area: copy;
+}
+
+.footer__link:link, .footer__link:visited{
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+}
+/* End of footer */
+
+
+
+/* Components */
+.recent__news--posts > .card{
+    margin-bottom: 2rem;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2rem;
+    grid-template-areas: 'img body body';
+}
+
+.card__img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    grid-area: img;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .card{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'img'
+    'body';
+        grid-row-gap: 2rem;
+    }
+
+    .card__img{
+        height: auto;
+    }
+
+    .recent__news--posts > .card{
+        margin-bottom: 4rem;
+    }
+
+}
+
+
+
+
+.card__heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.card__body{
+    grid-area: body;
+}
+
+.card__text{
+    width: 100%;
+    text-align: inherit;
+}
+
+.card__link:link, .card__link:visited{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/* End of Components */
