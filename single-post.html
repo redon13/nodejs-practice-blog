@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  Google fonts  -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Fontawesome  -->
+    <script src="https://kit.fontawesome.com/ce47c622ba.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nodejs Practice Blog App | Single post</title>
+
+</head>
+<body>
+<!-- Navigation -->
+<header>
+    <div class="nav">
+        <!-- <div class="nav__logo"> -->
+        <svg class="nav__logo">
+            <use xlink:href="assets/icon/sprites.svg#icon-blogger"></use>
+        </svg>
+        <!-- </div> -->
+        <ul class="nav__collection">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Add new</a></li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Contact Us</a></li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">About Us</a></li>
+        </ul>
+        <!--  hamburger for mobile view  -->
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+</header>
+<!-- Main body -->
+<main class="main-single-post">
+    <article class="article-single-page">
+        <h1 class="primary-heading mb-1">Summer is coming...</h1>
+
+        <div class="tertiary-heading mb-4">
+            <p><i class="far fa-user-circle"></i> John Doe</p>
+            <p><i class="far fa-calendar-alt"></i> 01/02/2021</p>
+            <p><i class="far fa-folder"></i> Cathegory</p>
+        </div>
+        <div class="article__box">
+            <div class="article__img--box">
+                <img src="assets/img/summer.jpg" alt="article image" class="article__img">
+            </div>
+            <div class="article__body">
+                <h2 class="article__heading secondary-heading mb-4">Summer is coming...</h2>
+                <p class="article__text paragraph">
+                    Summer is the hottest of the four temperate seasons, falling after spring and before autum. At around the summer
+                    solstice (about 3days before Midsummer Day), the earliest sunrise and latest sunset occurs, the days are longest and
+                    the nights are shortest with day length decreasing as the season progresses after the solstice. The date of the
+                    beginning of summer varies according to climates, tradition and culture. When it is summe rin the Northern Hemisphere,
+                    it is winter in the Souther Hemisphere and vice versa. From an astronomical view, the equinoxes and solstices would be
+                    the middle of the respective seasons.<br><br>
+                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Pellentesque in ipsum id orci porta dapibus.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat.
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.<br><br>
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor
+                    accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut
+                    libero malesuada feugiat.
+                </p>
+            </div>
+        </div>
+        <!--  Comment form  -->
+        <form action="#" class="comment__form">
+            <fieldset>
+                <!--            header  -->
+                <h2 class="secondary-heading"> Leave a Reply</h2>
+                <!--            name  -->
+                <div class="comment__form--group comment-name">
+                    <span><i class="far fa-user-circle fa-lg"></i></span>
+                    <input type="text" name="comment-name" id="comment-name" placeholder="Place your name here" class="email__input">
+                </div>
+                <!--            email  -->
+                <div class="comment__form--group comment-email">
+                    <span><i class="far fa-envelope fa-lg"></i></span>
+                    <input type="email" name="comment-email" id="comment-email" placeholder="Place your email here" class="email__input">
+                </div>
+                <!--            comment  -->
+                <div class="comment__form--group">
+                    <span><i class="far fa-comment-alt fa-lg"></i></span>
+                    <textarea name="comment-reply" id="comment-reply" placeholder="Leave your comment here ..."></textarea>
+
+                </div>
+                <div class="btn-submit-area">
+                    <input class="btn-submit" type="submit" value="Send">
+                </div>
+            </fieldset>
+        </form>
+        <!--  end Comment form  -->
+        <!--  comments on this post  -->
+        <div class="comments-list-group" >
+            <h2 class="secondary-heading">Comments on this post</h2>
+            <div class="comments-list">
+
+            </div>
+        </div>
+        <!--  end comments on this post  -->
+    </article>
+</main>
+<footer class="">
+    <div class="footer__icons">
+        <p class="footer__icons-text paragraph">Stay wit us</p>
+        <a href="#" class="footer__icon--link">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#" class="footer__icon--link">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="#" class="footer__icon--link">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="#" class="footer__icon--link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    <p class="footer__designer paragraph">
+        Designed by
+        <a href="https://www.behance.net/aseniyanimnad1" class="footer__link" target="_blank">Aseniya Nimnad</a>
+    </p>
+    <p class="footer__coder paragraph">
+        Coded by <a href="#" class="footer__link">Michicko</a> &
+        <a href="#" class="footer__link">GeorgeL</a>
+    </p>
+    <p class="footer__copy paragraph">Copyrights &copy; 2021.</p>
+</footer>
+</body>
+<script src="js/main.js"></script>
+</html>
