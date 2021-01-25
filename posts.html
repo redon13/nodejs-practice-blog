@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Nodejs Practice Blog App | Home</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <div class="nav">
+        <!-- <div class="nav__logo"> -->
+        <svg class="nav__logo">
+          <use xlink:href="assets/icons/sprites.svg#icon-blogger"></use>
+        </svg>
+        <!-- </div> -->
+        <ul class="nav__collection">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="posts.html" class="nav__link">Posts</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+        <!--  hamburger for mobile view  -->
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Main body -->
+    <main>
+        <div class="filter__box posts__filter">
+          <div class="filter__box--group mb-2">
+            <input
+              type="search"
+              name="filter"
+              id="filter"
+              class="filter__input"
+              placeholder="Search here"
+            />
+            <svg class="filter__icon">
+              <use xlink:href="assets/icons/sprites.svg#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="posts__heading-box">
+            <h2 class="primary-heading posts__heading mb-4">
+            Welcome to our posts page
+          </h2>
+        </div>
+      <section class="posts__section grid">
+          <div class="posts__category">
+              <h2 class="secondary-heading mb-2">Category</h2>
+              <ul class="posts__collections">
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">Sports</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">Climates</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">Entertainments</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">Travel</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">Politics</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">Discovery</a>
+                  </li>
+              </ul>
+          </div>
+        <div class="posts__cards">
+          <div class="card">
+            <img src="assets/images/temp.jpg" alt="" class="card__img" />
+            <div class="card__body">
+              <h3 class="card__heading mb-1">Temperature is high</h3>
+              <p class="card__text paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consequatur distinctio consequuntur ad laboriosam Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolore, earum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus aut hic animi explicabo dolorem consectetur.
+                <a href="#" class="card__link">Read more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/extinct.jpg" alt="" class="card__img" />
+            <div class="card__body">
+              <h3 class="card__heading mb-1">Animal Extinction</h3>
+              <p class="card__text paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consequatur distinctio consequuntur ad laboriosam molliti.
+                dolor sit amet consectetur adipisicing elit. Dolore, earum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus aut hic animi explicabo dolorem consectetur.
+                <a href="#" class="card__link">Read more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/ice.jpg" alt="" class="card__img" />
+            <div class="card__body">
+              <h3 class="card__heading mb-1">Ice dissolution</h3>
+              <p class="card__text paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consequatur distinctio consequuntur ad laboriosam mollitia?
+                Lorem ipsum dolor sit amet.
+                dolor sit amet consectetur adipisicing elit. Dolore, earum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus aut hic animi explicabo dolorem consectetur.
+                <a href="#" class="card__link">Read more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/temp.jpg" alt="" class="card__img" />
+            <div class="card__body">
+              <h3 class="card__heading mb-1">Temperature is high</h3>
+              <p class="card__text paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consequatur distinctio consequuntur ad laboriosam Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolore, earum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus aut hic animi explicabo dolorem consectetur.
+                <a href="#" class="card__link">Read more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/extinct.jpg" alt="" class="card__img" />
+            <div class="card__body">
+              <h3 class="card__heading mb-1">Animal Extinction</h3>
+              <p class="card__text paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consequatur distinctio consequuntur ad laboriosam molliti.
+                dolor sit amet consectetur adipisicing elit. Dolore, earum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus aut hic animi explicabo dolorem consectetur.
+                <a href="#" class="card__link">Read more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/ice.jpg" alt="" class="card__img" />
+            <div class="card__body">
+              <h3 class="card__heading mb-1">Ice dissolution</h3>
+              <p class="card__text paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consequatur distinctio consequuntur ad laboriosam mollitia?
+                Lorem ipsum dolor sit amet.
+                dolor sit amet consectetur adipisicing elit. Dolore, earum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus aut hic animi explicabo dolorem consectetur.
+                <a href="#" class="card__link">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="posts__dates">
+            <h2 class="secondary-heading mb-2">Months</h2>
+              <ul class="posts__collections">
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">January</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">February</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">March</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">April</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">May</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">June</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">July</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">August</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">September</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">October</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">November</a>
+                  </li>
+                  <li class="posts__item">
+                      <a href="#" class="posts__link">December</a>
+                  </li>
+              </ul>
+        </div>
+      </section>
+      <div class="page__navigation">
+        <p class="prev pnav"><</p>
+        <p class="next pnav">></p>
+      </div>
+      <div class="posts__subscribe-box">
+      <div class="newsletter-box newsletter">
+          <h2 class="secondary-heading newsletter__heading mb-2">
+              News Letters
+            </h2>
+          <!-- </div> -->
+          <form action="#" class="newsletter__form">
+            <div class="newsletter__form--group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Place your email here"
+                class="email__input"
+              />
+              <svg class="email__icon">
+                <use xlink:href="assets/icons/sprites.svg#icon-envelop"></use>
+              </svg>
+            </div>
+            <span class="subscribe">Subscribe Us</span>
+          </form>
+        </div>
+        </div>
+    </main>
+    <footer>
+      <div class="footer__icons">
+        <p class="footer__icons-text paragraph">Stay wit us</p>
+        <a href="#" class="footer__icon--link">
+          <svg class="footer__icon">
+            <use xlink:href="assets/icons/sprites.svg#icon-facebook2"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__icon--link">
+          <svg class="footer__icon">
+            <use xlink:href="assets/icons/sprites.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__icon--link">
+          <svg class="footer__icon twitter__icon">
+            <use xlink:href="assets/icons/sprites.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__icon--link">
+          <svg class="footer__icon">
+            <use xlink:href="assets/icons/sprites.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="footer__designer paragraph">
+        Designed by
+        <a
+          href="https://www.behance.net/aseniyanimnad1"
+          class="footer__link"
+          target="_blank"
+          >Aseniya Nimnad</a
+        >
+      </p>
+      <p class="footer__coder paragraph">
+        Coded by <a href="#" class="footer__link">Michicko</a> &
+        <a href="#" class="footer__link">GeorgeL</a>
+      </p>
+      <p class="footer__copy paragraph">Copyrights &copy; 2021.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
